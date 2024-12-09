@@ -1,0 +1,1 @@
+Adjunto una colección postamn con todas las solicitudes de la práctica de consolidación.

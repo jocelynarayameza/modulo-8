@@ -1,0 +1,719 @@
+{
+	"info": {
+		"_postman_id": "3147ede1-8e58-4c27-b068-151b1d54e8ae",
+		"name": "jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34542142"
+	},
+	"item": [
+		{
+			"name": "PostUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mateo\",\r\n    \"lastName\": \"Díaz\",\r\n    \"email\": \"mateo.diaz@correo.com\",\r\n    \"password\": \"mateo123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PostUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Santiago\",\r\n    \"lastName\": \"Mejías\",\r\n    \"email\": \"santiago.mejias@correo.com\",\r\n    \"password\": \"santiago123456\"\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "PostUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Lucas\",\r\n    \"lastName\": \"Rojas\",\r\n    \"email\": \"lucas.rojas@correo.com\",\r\n    \"password\": \"lucas123456\"\r\n  \r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "PostUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Facundo\",\r\n    \"lastName\": \"Fernández\",\r\n    \"email\": \"facundo.fernandez@correo.com\",\r\n    \"password\": \"facundo123456\"\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "PostBootcamp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Introduciendo El Bootcamp de React\",\r\n    \"cue\": 10,\r\n    \"description\": \"React es la librería más usada en JavaScript para el desarrollo de interfaces\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bootcamp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bootcamp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PostBootcamp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Bootcamp Desarrollo Web Full Stack\",\r\n    \"cue\": 12,\r\n    \"description\": \"Crearás aplicaciones web utilizando las tecnologías y lenguajes más actuales y populares como JavaScript, nodeJS, Angular, MongoDB, ExpressJS\"\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bootcamp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bootcamp"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "PostBootcamp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Bootcamp Big Data, Inteligencia Artificial & Machine Learning\",\r\n    \"cue\": 18,\r\n    \"description\": \"Domina Data Science todo el ecosistema de lenguajes y herramientas de Big Data e integrarlos con modelos avanzados de Artificial Intelligence y Machine Learning\"\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bootcamp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bootcamp"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idBootcamp\": 1,\r\n    \"idUser\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBootcamp\": 1,\r\n    \"idUser\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addUser"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "addUser Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBootcamp\": 2,\r\n    \"idUser\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addUser"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBootcamp\": 3,\r\n    \"idUser\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addUser"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBootcamp\": 3,\r\n    \"idUser\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addUser"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "addUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBootcamp\": 3,\r\n    \"idUser\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addUser"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "loginExitoso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\": \"mateo.diaz@correo.com\",\r\n    \"password\": \"mateo123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-no-exitoso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\": \"mateo.diaz@correo.com\",\r\n    \"password\": \"mateo1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoyLCJmaXJzdE5hbWUiOiJNYXRlbyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6Im1hdGVvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6Im1hdGVvMTIzNDU2IiwiY3JlYXRlZEF0IjoiMjAyNC0xMi0wN1QxODo1OTozOC4xNDhaIiwidXBkYXRlZEF0IjoiMjAyNC0xMi0wN1QxODo1OTozOC4xNDhaIn0sIl9wcmV2aW91c0RhdGFWYWx1ZXMiOnsiaWQiOjIsImZpcnN0TmFtZSI6Ik1hdGVvIiwibGFzdE5hbWUiOiJEw61heiIsImVtYWlsIjoibWF0ZW9AY29ycmVvLmNvbSIsInBhc3N3b3JkIjoibWF0ZW8xMjM0NTYiLCJjcmVhdGVkQXQiOiIyMDI0LTEyLTA3VDE4OjU5OjM4LjE0OFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEyLTA3VDE4OjU5OjM4LjE0OFoifSwidW5pcW5vIjoxLCJfY2hhbmdlZCI6e30sIl9vcHRpb25zIjp7ImlzTmV3UmVjb3JkIjpmYWxzZSwiX3NjaGVtYSI6bnVsbCwiX3NjaGVtYURlbGltaXRlciI6IiIsInJhdyI6dHJ1ZSwiYXR0cmlidXRlcyI6WyJpZCIsImZpcnN0TmFtZSIsImxhc3ROYW1lIiwiZW1haWwiLCJwYXNzd29yZCIsImNyZWF0ZWRBdCIsInVwZGF0ZWRBdCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlLCJpYXQiOjE3MzM2ODY3MjN9.WMyeGEd8zjXKCN8GjmhjwLYrQFTgEd6NewTRXhv0CLg",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxOSwiZmlyc3ROYW1lIjoiUGVkcm8iLCJsYXN0TmFtZSI6IkTDrWF6IiwiZW1haWwiOiJwZWRyb0Bjb3JyZW8uY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkempFQW43VkRCQTh2RzV5bThqelFYLklYVU1qaW9aZnZTb2QzcDd0Uk1rNW1tZ28xcy9xSlMiLCJjcmVhdGVkQXQiOiIyMDI0LTEyLTA4VDIyOjQzOjEyLjkxNFoiLCJ1cGRhdGVkQXQiOiIyMDI0LTEyLTA4VDIyOjQzOjEyLjkxNFoifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MTksImZpcnN0TmFtZSI6IlBlZHJvIiwibGFzdE5hbWUiOiJEw61heiIsImVtYWlsIjoicGVkcm9AY29ycmVvLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHpqRUFuN1ZEQkE4dkc1eW04anpRWC5JWFVNamlvWmZ2U29kM3A3dFJNazVtbWdvMXMvcUpTIiwiY3JlYXRlZEF0IjoiMjAyNC0xMi0wOFQyMjo0MzoxMi45MTRaIiwidXBkYXRlZEF0IjoiMjAyNC0xMi0wOFQyMjo0MzoxMi45MTRaIn0sInVuaXFubyI6MSwiX2NoYW5nZWQiOnt9LCJfb3B0aW9ucyI6eyJpc05ld1JlY29yZCI6ZmFsc2UsIl9zY2hlbWEiOm51bGwsIl9zY2hlbWFEZWxpbWl0ZXIiOiIiLCJyYXciOnRydWUsImF0dHJpYnV0ZXMiOlsiaWQiLCJmaXJzdE5hbWUiLCJsYXN0TmFtZSIsImVtYWlsIiwicGFzc3dvcmQiLCJjcmVhdGVkQXQiLCJ1cGRhdGVkQXQiXX0sImlzTmV3UmVjb3JkIjpmYWxzZSwiaWF0IjoxNzMzNzAxMzk5fQ.MfvZ3-1W4Cvq7OoNQ9aTm4jBhdE9zgyOwVYydkiuJxQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Pedro\",\r\n    \"lastName\": \"Sanchez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBootcampId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJfcHJldmlvdXNEYXRhVmFsdWVzIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJQZWRybyIsImxhc3ROYW1lIjoiRMOtYXoiLCJlbWFpbCI6InBlZHJvQGNvcnJlby5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRudWVzYTRJbUZucDF1WjR1VUhIRkYuUDhTZ3pNbG9xekR6am1SZHRwWHBNc3RpZUJ0V2IxZSIsImNyZWF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiIsInVwZGF0ZWRBdCI6IjIwMjQtMTItMDlUMDA6MjE6NDkuMTM1WiJ9LCJ1bmlxbm8iOjEsIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJlbWFpbCIsInBhc3N3b3JkIiwiY3JlYXRlZEF0IiwidXBkYXRlZEF0Il19LCJpc05ld1JlY29yZCI6ZmFsc2UsImlhdCI6MTczMzcwMzcyOH0.zvFgXHf-O5hcLMCI742YkNl--vkba_a4YwG1LvqqaVU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/bootcamp/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bootcamp",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBootcamps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/bootcamp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bootcamp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
